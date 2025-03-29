@@ -5,40 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nursing Study Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <h1>Nursing Study Hub</h1>
-            <ul class="nav-links">
+        <nav>
+            <div class="logo">Nursing Study Hub</div>
+            <button id="menuToggle">☰</button>
+            <ul id="navLinks">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-            <button id="darkModeToggle">🌙</button>
         </nav>
     </header>
     
     <main>
-        <div class="search-container">
-            <input type="text" id="searchBox" placeholder="Search questions...">
-        </div>
+        <button id="darkModeToggle">🌙</button>
+        <input type="text" id="searchBox" placeholder="Search questions...">
         
-        <div class="questions-container">
-            <div class="question-card">
-                <button class="question">What is the structure of the human heart?</button>
-                <div class="answer">The human heart consists of four chambers: two atria and two ventricles...</div>
-            </div>
-            <div class="question-card">
-                <button class="question">Define homeostasis with examples.</button>
-                <div class="answer">Homeostasis is the ability of an organism to maintain stable internal conditions...</div>
-            </div>
-            <div class="question-card">
-                <button class="question">Explain the effects of drugs on the nervous system.</button>
-                <div class="answer">Drugs affect neurotransmitter release, receptor binding, and neural activity...</div>
-            </div>
+        <div class="question-container">
+            <!-- Questions will be dynamically added here -->
         </div>
     </main>
+    
+    <script src="script.js"></script>
 </body>
 </html>
