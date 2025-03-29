@@ -1,59 +1,99 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    transition: background 0.3s, color 0.3s;
 }
 
-header {
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #007bff;
-    color: white;
     padding: 15px;
+    color: white;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.nav-links {
+    list-style: none;
+    display: flex;
 }
-
-nav ul li {
-    display: inline;
+.nav-links li {
     margin: 0 15px;
 }
-
-nav ul li a {
+.nav-links a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
     color: white;
 }
 
-main {
-    padding: 20px;
+/* Search Bar */
+.search-container {
+    text-align: center;
+    margin: 20px;
 }
-
-input {
-    padding: 8px;
+#searchBox {
     width: 80%;
-    margin: 10px 0;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: white;
     padding: 10px;
-    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-footer {
-    background: #007bff;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+/* Questions Section */
+.questions-container {
+    max-width: 800px;
+    margin: auto;
+}
+.question-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.question {
     width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+}
+.answer {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+.dark-mode .navbar {
+    background-color: #0056b3;
+}
+.dark-mode .question-card {
+    background: #333;
+    color: white;
+}
+.dark-mode #searchBox {
+    background: #555;
+    color: white;
+    border: 1px solid white;
 }
