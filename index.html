@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nursing Study Hub</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="Upo3r5vpNg2prEg-syzVjMnm11fPf-TqrPVMAuhUa-4" />
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Nursing Study Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="questions/anatomy.html">Anatomy</a></li>
-                <li><a href="questions/physiology.html">Physiology</a></li>
-                <li><a href="questions/pharmacology.html">Pharmacology</a></li>
+        <nav class="navbar">
+            <h1>Nursing Study Hub</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
             </ul>
+            <button id="darkModeToggle">🌙</button>
         </nav>
     </header>
     
     <main>
-        <h2>Welcome to Nursing Study Hub</h2>
-        <p>Find previous year question papers and answers here.</p>
-        <input type="text" id="searchBox" placeholder="Search questions..." onkeyup="searchQuestions()">
-        <ul id="questionList">
-            <li>What is the structure of the human heart?</li>
-            <li>Define homeostasis with examples.</li>
-            <li>Explain the effects of drugs on the nervous system.</li>
-        </ul>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search questions...">
+        </div>
+        
+        <div class="questions-container">
+            <div class="question-card">
+                <button class="question">What is the structure of the human heart?</button>
+                <div class="answer">The human heart consists of four chambers: two atria and two ventricles...</div>
+            </div>
+            <div class="question-card">
+                <button class="question">Define homeostasis with examples.</button>
+                <div class="answer">Homeostasis is the ability of an organism to maintain stable internal conditions...</div>
+            </div>
+            <div class="question-card">
+                <button class="question">Explain the effects of drugs on the nervous system.</button>
+                <div class="answer">Drugs affect neurotransmitter release, receptor binding, and neural activity...</div>
+            </div>
+        </div>
     </main>
-
-    <footer>
-        <p>© 2025 Nursing Study Hub. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
