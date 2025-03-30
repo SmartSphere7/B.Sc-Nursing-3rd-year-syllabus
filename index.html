@@ -8,27 +8,22 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Nursing Study Hub</div>
-            <button id="menuToggle">☰</button>
-            <ul id="navLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
+        <h1>Nursing Study Hub</h1>
+        <input type="text" id="searchBar" placeholder="Search topics..." onkeyup="searchTopics()">
     </header>
     
     <main>
-        <button id="darkModeToggle">🌙</button>
-        <input type="text" id="searchBox" placeholder="Search questions...">
-        <button id="addQuestion">➕ Add Question</button>
-        
-        <div class="question-container" id="questionContainer">
-            <!-- Questions will be dynamically added here -->
-        </div>
+        <section id="subjects">
+            <h2>Subjects</h2>
+            <ul id="subjectList">
+                <li><a href="#" onclick="loadTopics('Midwifery & Obstetrical Nursing – I')">Midwifery & Obstetrical Nursing-I</a></li>
+                <li><a href="#" onclick="loadTopics('Child Health Nursing')">child Health Nursing</a></li>
+                <li><a href="#" onclick="loadTopics('Mental Health Nursing')">Mental Health Nursing</a></li>
+                <li><a href="#" onclick="loadTopics('Medical Surgical Nursing – II')">Medical Surgical Nursing-II</a></li>
+            </ul>
+        </section>
     </main>
     
-    <script src="script.js"></script>
+    <script src="nursing_hub.js"></script>
 </body>
 </html>
